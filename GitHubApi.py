@@ -16,9 +16,3 @@ def getrepo(username):
         repoObj = repoObj.json()
         print("Repo: " + repo['name'] + "      Number Of Commits: " + str(len(repoObj)))
     return True
-
-def getusername():
-    userid = input("Enter user ID from GitHub : ")
-    getrepo(userid)
-
-getusername()
